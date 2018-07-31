@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+
+{% block content %}
+{{block.super}}
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="head">Rioting Application</h1>
+<button id="btnAction" onClick="locate()" class="btn btn-success">My Current Location</button>
+<div id="map" style="width:90%;height:500px;"></div>
+<button class="btn btn-danger" id="but" >Report Riot</button>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyB21tjyoyJ2yO0R-uAbCIpljdN4Q50BmlA
+&callback=myMap"></script>
+
+
+
+
+
+</body>
+</html>
+{% endblock %}
